@@ -1,0 +1,99 @@
+
+@font-face {
+  src: url("../OpenSans/OpenSans-Regular.ttf");
+  font-family: 'Open Sans', sans-serif;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body{}
+
+$font-family-sans-serif : 'Open Sans', sans-serif;
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+
+.nav-item{
+  padding-right: 15px !important;
+}
+
+.nav-item:last-child{
+  padding-right: 0 !important;
+}
+
+.header{
+  background-color: rgba(0, 0, 0, 0.36);
+}
+
+.logo{
+  width: 40px;
+}
+
+.home{
+  background-image: url("../img/homebg.svg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: top left;
+}
+
+.recipes{
+  background-color: #FFAA00;
+}
+
+.recipes-card{
+  border-radius: 10px !important;
+  overflow: hidden;
+}
+
+.recipes-img{
+  height: 200px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.hours{
+  background-color: rgba(19, 19, 21, 0.91);
+}
+
+.hour-div{
+  height: 400px;
+}
+
+.clock{
+  width: 70px;
+  height: 70px;
+  margin-bottom: 0 !important;
+  line-height: 70px;
+}
+
+.img-rectangle{
+  width: 200px;
+  height: 200px;
+  border-radius: 0.75rem !important;
+  background-color: #A80E0E;
+  position: absolute;
+  z-index: -1;
+  bottom: -30px;
+  left: -20px;
+}
+
+.client-img{
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.left-side{
+  background-color: #A80E0E ;
+}

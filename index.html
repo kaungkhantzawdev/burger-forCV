@@ -1,0 +1,818 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Burger</title>
+    <link rel="icon" href="./assets/img/logo.svg">
+    <link rel="stylesheet" href="./assets/vendor/node_modules/@fortawesome/fontawesome-free/css/all.css">
+    <link rel="stylesheet" href="./assets/node_modules/aos/dist/aos.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body onload="updateClock()">
+<nav class="navbar navbar-expand-lg header w-100 navbar-dark" id="header">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+            <div class="logo">
+                <img src="./assets/img/logo.svg" alt="" class="img-fluid">
+            </div>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active-nav home-sec" aria-current="page" href="#home-sec">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link menu-sec" aria-current="page" href="#menu-sec">Menu</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link recipe-sec" aria-current="page" href="#recipe-sec">Recipes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link client-sec" aria-current="page" href="#client-sec">Testimonials</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link contact-sec" aria-current="page" href="#contact-sec">Contact us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#">
+                        <i class="fa-solid fa-shopping-bag fa-fw"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#">
+                        <i class="fa-solid fa-user fa-fw"></i>
+                    </a>
+                </li>
+            </ul>
+            
+        </div>
+    </div>
+</nav>
+
+<!--home-->
+<section class="container-fluid home" id="home-sec">
+    <div class="row">
+        <div class="col-12">
+            <div class="container">
+                <div data-aos="fade-up" class="row  min-vh-100 align-items-center">
+                    <div class="col-12 d-block d-lg-none text-center">
+                        <div class="">
+                            <img src="./assets/img/pngBurger.png" alt="" class="img-fluid rounded-3">
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-8">
+                        <div class="text-white">
+                            <h1 class="mb-0 display-5 fw-bold">Burger <span class=" auto-type "></span></h1>
+                            <p class="my-4 lh-lg">
+                                <strong class="text-warning">Buy any 2 burgers and get 1.5L Pepsi Free</strong> <br>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                <br>Lorem ipsum dolor sit amet, consectetur.
+                            </p>
+                            <button class="btn btn-warning">Order Now</button>
+                            <button class="btn btn-outline-warning ms-2">see menu</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--menu-->
+<section class="container-fluid menu" id="menu-sec">
+    <div class="row">
+        <div class="col-12">
+            <div class="container">
+                <div class="row">
+                    <div data-aos="fade-up" class="col-12">
+                        <div class="text-center my-5">
+                            <h1 class="mb-3 fw-bold">What to eat?</h1>
+                            <p class="text-black-50 mb-0">Try our Most Delicious food and it usually take minutes to deliver!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row pb-5" data-aos="fade-up" data-aos-delay="100">
+                    <div class="col-6 col-md-2">
+                        <div class="card border-0">
+                            <div class="card-body text-center">
+                                <img src="./assets/img/buger.svg" class="img-fluid" style="height: 60px" alt="">
+                                <h6 class="mt-3">Burger</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-2">
+                        <div class="card border-0">
+                            <div class="card-body text-center">
+                                <img src="./assets/img/pizza.svg" class="img-fluid" style="height: 60px" alt="">
+                                <h6 class="mt-3">Pizza</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-2">
+                        <div class="card border-0">
+                            <div class="card-body text-center">
+                                <img src="./assets/img/fries.svg" class="img-fluid" style="height: 60px" alt="">
+                                <h6 class="mt-3">Fries</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-2">
+                        <div class="card border-0">
+                            <div class="card-body text-center">
+                                <img src="./assets/img/cupcake.svg" class="img-fluid" style="height: 60px" alt="">
+                                <h6 class="mt-3">Cup Cake</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-2">
+                        <div class="card border-0">
+                            <div class="card-body text-center">
+                                <img src="./assets/img/sanwitch.svg" class="img-fluid" style="height: 60px" alt="">
+                                <h6 class="mt-3">Sanwitch</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-2">
+                        <div class="card border-0">
+                            <div class="card-body text-center">
+                                <img src="./assets/img/spagheit.svg" class="img-fluid" style="height: 60px" alt="">
+                                <h6 class="mt-3">Spicy Noodle</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--minutes -->
+<section class="container-fluid minutes" id="minute-sec">
+    <div class="row">
+        <div class="col-12">
+            <div class="container">
+                <div class="row justify-content-md-center align-items-center">
+                    <div class="col-12 col-md-6">
+                        <div data-aos="fade-up" data-aos-delay="100" class="">
+                            <div class="">
+                                <h1 class="mb-0 fw-bold text-warning">We Guarantee <br>30 Minutes Delivery</h1>
+                                <p class="my-4 lh-lg text-black-50">
+                                    If you’re having a meeting, working late at night and need an extra push.
+
+                                    Let us know and we will be there
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div data-aos="fade-up" data-aos-delay="100" class="pt-5">
+                            <img src="./assets/img/shutter.webp" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--recipes-->
+<section class="container-fluid recipes" id="recipe-sec">
+    <div class="row">
+        <div class="col-12">
+            <div class="container">
+                <div class="row"  data-aos="fade-up">
+                    <div class="col-12">
+                        <div class="text-center my-5">
+                            <h1 class="mb-3 fw-bold text-white">Our Most Popular Recipes</h1>
+                            <p class="text-white-50 mb-0">Try our Most Delicious food and it usually take minutes to deliver!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row min-vh-100 align-items-end"  data-aos="fade-up" data-aos-delay="100">
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="">
+                            <div class="card border-0 recipes-card mb-4">
+                                <img src="./assets/img/one.jpg" class="card-img-top recipes-img" alt="burger">
+                                <div class="card-body">
+                                    <p class="card-text ">
+                                        <i class="fa-solid text-warning fa-star fa-fw"></i>
+                                        <small>9.5 Rating</small>
+                                    </p>
+                                    <h5 class="card-title">Burger Dishes</h5>
+                                    <p class="card-text text-black-50">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam.</p>
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <a href="#" class="btn btn-warning">
+                                            <i class="fa-solid fa-cart-plus fa-fw"></i>
+                                            <span>Add to Cart</span>
+                                        </a>
+                                        <h5 class="d-inline-block mb-0">
+                                            $ 10.6
+                                        </h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="">
+                            <div class="card border-0 recipes-card mb-4">
+                                <img src="./assets/img/two.jpg" class="card-img-top recipes-img" alt="burger">
+                                <div class="card-body">
+                                    <p class="card-text ">
+                                        <i class="fa-solid text-warning fa-star fa-fw"></i>
+                                        <small>7.5 Rating</small>
+                                    </p>
+                                    <h5 class="card-title">Sweet Dishes</h5>
+                                    <p class="card-text text-black-50">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam.</p>
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <a href="#" class="btn btn-warning">
+                                            <i class="fa-solid fa-cart-plus fa-fw"></i>
+                                            <span>Add to Cart</span>
+                                        </a>
+                                        <h5 class="d-inline-block mb-0">
+                                            $ 10.6
+                                        </h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="">
+                            <div class="card border-0 recipes-card mb-4">
+                                <img src="./assets/img/three.jpg" class="card-img-top recipes-img" alt="burger">
+                                <div class="card-body">
+                                    <p class="card-text ">
+                                        <i class="fa-solid text-warning fa-star fa-fw"></i>
+                                        <small>9.9 Rating</small>
+                                    </p>
+                                    <h5 class="card-title">Popular Dishes</h5>
+                                    <p class="card-text text-black-50">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam.</p>
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <a href="#" class="btn btn-warning">
+                                            <i class="fa-solid fa-cart-plus fa-fw"></i>
+                                            <span>Add to Cart</span>
+                                        </a>
+                                        <h5 class="d-inline-block mb-0">
+                                            $ 15.6
+                                        </h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="">
+                            <div class="card border-0 recipes-card mb-4">
+                                <img src="./assets/img/four.jpg" class="card-img-top recipes-img" alt="burger">
+                                <div class="card-body">
+                                    <p class="card-text ">
+                                        <i class="fa-solid text-warning fa-star fa-fw"></i>
+                                        <small>7.5 Rating</small>
+                                    </p>
+                                    <h5 class="card-title">Best Dishes</h5>
+                                    <p class="card-text text-black-50">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam.</p>
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <a href="#" class="btn btn-warning">
+                                            <i class="fa-solid fa-cart-plus fa-fw"></i>
+                                            <span>Add to Cart</span>
+                                        </a>
+                                        <h5 class="d-inline-block mb-0">
+                                            $ 13.6
+                                        </h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="">
+                            <div class="card border-0 recipes-card mb-4">
+                                <img src="./assets/img/five.jpg" class="card-img-top recipes-img" alt="burger">
+                                <div class="card-body">
+                                    <p class="card-text ">
+                                        <i class="fa-solid text-warning fa-star fa-fw"></i>
+                                        <small>8.5 Rating</small>
+                                    </p>
+                                    <h5 class="card-title">Good Dishes</h5>
+                                    <p class="card-text text-black-50">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam.</p>
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <a href="#" class="btn btn-warning">
+                                            <i class="fa-solid fa-cart-plus fa-fw"></i>
+                                            <span>Add to Cart</span>
+                                        </a>
+                                        <h5 class="d-inline-block mb-0">
+                                            $ 10.6
+                                        </h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="">
+                            <div class="card border-0 recipes-card mb-5 mb-md-4 mb-lg-4">
+                                <img src="./assets/img/six.jpg" class="card-img-top recipes-img" alt="burger">
+                                <div class="card-body">
+                                    <p class="card-text ">
+                                        <i class="fa-solid text-warning fa-star fa-fw"></i>
+                                        <small>8.9 Rating</small>
+                                    </p>
+                                    <h5 class="card-title">Sanwitch Dishes</h5>
+                                    <p class="card-text text-black-50">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam.</p>
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <a href="#" class="btn btn-warning">
+                                            <i class="fa-solid fa-cart-plus fa-fw"></i>
+                                            <span>Add to Cart</span>
+                                        </a>
+                                        <h5 class="d-inline-block mb-0">
+                                            $ 10.6
+                                        </h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="text-center mb-5"  data-aos="fade-up" data-aos-delay="100">
+                            <button class="btn btn-outline-light">Show our menu</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--happy hours-->
+<section class="container-fluid hours" id="hour-sec">
+    <div class="row">
+        <div class="col-12">
+            <div class="container">
+                <div class="row min-vh-100 align-items-center justify-content-between">
+                    <div data-aos="fade-up" class="col-12 col-lg-6">
+                       <div class="">
+                           <div class="mb-5 text-white">
+                               <h1 class="mb-0">Happy <span class="text-warning">hours</span> </h1>
+                               <p class="my-4">Friday 5pm - 8pm</p>
+                               <p class="mb-0">40% off All premium burger</p>
+                           </div>
+                           <div class="text-white">
+                               <div class="d-inline-block text-center me-3 mb-3">
+                                   <h1 class="clock text-center bg-warning rounded" id="day">00</h1>
+                                    <span class="mt-2 d-inline-block">Days</span>
+                               </div>
+                               <div class="d-inline-block text-center me-3 mb-3">
+                                   <h1 class="clock text-center bg-warning rounded" id="hour">00</h1>
+                                   <span class="mt-2 d-inline-block">hour</span>
+                               </div>
+                               <div class="d-inline-block text-center me-3 mb-3">
+                                   <h1 class="clock text-center bg-warning rounded" id="min">00</h1>
+                                   <span class="mt-2 d-inline-block">min</span>
+                               </div>
+                               <div class="d-inline-block text-center me-3 mb-3">
+                                   <h1 class="clock text-center bg-warning rounded" id="sec">00</h1>
+                                   <span class="mt-2 d-inline-block">sec</span>
+                               </div>
+                           </div>
+                       </div>
+                    </div>
+                    <div data-aos="fade-up" class="col-12 col-lg-6">
+                        <div class="d-flex justify-content-center">
+                            <img src="./assets/img/pngBurger.png" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--client testimonial-->
+<section class="container-fluid client" id="client-sec">
+    <div class="row py-5">
+        <div class="col-12">
+            <div class="container">
+                <div class="row"  data-aos="fade-up">
+                    <div class="col-12">
+                        <div class="text-center my-5">
+                            <h1 class="mb-3 fw-bold">Client Testimonials</h1>
+                            <p class="text-black-50 mb-0">Try our Most Delicious food and it usually take minutes to deliver!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mb-5" data-aos="fade-up" data-aos-delay="100">
+                    <div class="col-12">
+                        <div class="row">
+                            <div class="col-12">
+                                <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <div class="row  align-items-center justify-content-center">
+                                                <div class="col-12 col-md-5 position-relative">
+                                                    <div class="p-5 mb-3 mb-lg-0">
+                                                        <img src="./assets/img/client.svg" alt="" class="img-fluid  client-img rounded">
+                                                    </div>
+                                                    <div class="img-rectangle d-none d-lg-block"></div>
+                                                </div>
+                                                <div class="col-12 col-md-7">
+                                                    <div class="">
+                                                        <div class="">
+                                                            <img src="./assets/img/comma.svg" alt="" class="img-fluid" width="40">
+                                                            <p class="my-4 text-black-50">
+                                                                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                                                            </p>
+                                                            <h5 class="mb-2">Mr.Marry</h5>
+                                                            <span class="">
+                                                            <i class="fa-solid fa-user fa-fw"></i>
+                                                                - CEO of RAN Company.
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <div class="row  align-items-center justify-content-center">
+                                                <div class="col-12 col-md-5 position-relative">
+                                                    <div class="p-5 mb-3 mb-lg-0">
+                                                        <img src="./assets/img/mantwo-eat.jpg" alt="" class="img-fluid client-img rounded">
+                                                    </div>
+                                                    <div class="img-rectangle d-none d-lg-block"></div>
+                                                </div>
+                                                <div class="col-12 col-md-7">
+                                                    <div class="">
+                                                        <div class="">
+                                                            <img src="./assets/img/comma.svg" alt="" class="img-fluid " width="40">
+                                                            <p class="my-4 text-black-50">
+                                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, corporis dolorum est ipsam ipsum laboriosam natus reiciendis sint totam velit? Corporis iure laboriosam perspiciatis. Alias asperiores consectetur deleniti id officia.
+                                                            </p>
+                                                            <h5 class="mb-2">Mr.Willian</h5>
+                                                            <span class="">
+                                                            <i class="fa-solid fa-user fa-fw"></i>
+                                                                - CEO of Marin Company.
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <div class="row  align-items-center justify-content-center">
+                                                <div class="col-12 col-md-5 position-relative">
+                                                    <div class="p-5 mb-3 mb-lg-0">
+                                                        <img src="./assets/img/girl-eat.jpg" alt="" class="img-fluid  client-img rounded">
+                                                    </div>
+                                                    <div class="img-rectangle d-none d-lg-block"></div>
+                                                </div>
+                                                <div class="col-12 col-md-7">
+                                                    <div class="">
+                                                        <div class="">
+                                                            <img src="./assets/img/comma.svg" alt="" class="img-fluid " width="40">
+                                                            <p class="my-4 text-black-50">
+                                                                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                                                            </p>
+                                                            <h5 class="mb-2">Mr.Marry</h5>
+                                                            <span class="">
+                                            <i class="fa-solid fa-user fa-fw"></i>
+                                            - CEO of RAN Company.
+                                        </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <div class="row  align-items-center justify-content-center">
+                                                <div class="col-12 col-md-5 position-relative">
+                                                    <div class="p-5 mb-3 mb-lg-0">
+                                                        <img src="./assets/img/man-eating-burger.webp" alt="" class="img-fluid rounded">
+                                                    </div>
+                                                    <div class="img-rectangle d-none d-lg-block"></div>
+                                                </div>
+                                                <div class="col-12 col-md-7">
+                                                    <div class="">
+                                                        <div class="">
+                                                            <img src="./assets/img/comma.svg" alt="" class="img-fluid " width="40">
+                                                            <p class="my-4 text-black-50">
+                                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus culpa earum fuga impedit iure magnam mollitia omnis recusandae sequi tenetur. Corporis cumque dolorum eaque maiores, omnis quia similique veniam. Optio!
+                                                            </p>
+                                                            <h5 class="mb-2">Mr.Jean</h5>
+                                                            <span class="">
+                                            <i class="fa-solid fa-user fa-fw"></i>
+                                            - CEO of RAN Company.
+                                        </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="container-fluid recipes" id="recipe-sec">
+    <div class="row">
+        <div class="col-12">
+            <div class="container">
+                <div  data-aos="fade-up" data-aos-delay="100" class="row my-5 py-5">
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="">
+                            <div class="card border-0 mb-3 mb-lg-0" style="height: 250px">
+                                <div class="card-body overflow-hidden text-center">
+                                    <div class="p-2">
+                                        <img src="./assets/img/order.svg" class="img-fluid" alt="">
+                                    </div>
+                                    <h5 class="my-2">
+                                        Free shipping on first order
+                                    </h5>
+                                    <hr class="bg-warning w-50 mx-auto my-2" style="height: 2px">
+                                    <p class="mb-0">
+                                        Sign up for updates and get free shipping
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="">
+                            <div class="card border-0 mb-3 mb-lg-0" style="height: 250px">
+                                <div class="card-body overflow-hidden text-center">
+                                    <div class="p-2">
+                                        <img src="./assets/img/deli-time.svg" class="img-fluid" alt="">
+                                    </div>
+                                    <h5 class="my-2">
+                                        30 minutes delivery
+                                    </h5>
+                                    <hr class="bg-warning w-50 mx-auto my-2" style="height: 2px">
+                                    <p class="mb-0">
+                                        Sign up for updates and get free shipping
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="">
+                            <div class="card border-0 mb-3 mb-lg-0" style="height: 250px">
+                                <div class="card-body overflow-hidden text-center">
+                                    <div class="p-2">
+                                        <img src="./assets/img/buger-quality.svg" class="img-fluid" alt="">
+                                    </div>
+                                    <h5 class="my-2">
+                                        Best quality guarantee
+                                    </h5>
+                                    <hr class="bg-warning w-50 mx-auto my-2" style="height: 2px">
+                                    <p class="mb-0">
+                                        Sign up for updates and get free shipping
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="">
+                            <div class="card border-0 mb-3 mb-lg-0" style="height: 250px">
+                                <div class="card-body overflow-hidden text-center">
+                                    <div class="p-2">
+                                        <img src="./assets/img/various-dishes.svg" class="img-fluid" alt="">
+                                    </div>
+                                    <h5 class="my-2">
+                                        Variety of dishes
+                                    </h5>
+                                    <hr class="bg-warning w-50 mx-auto my-2" style="height: 2px">
+                                    <p class="mb-0">
+                                        Sign up for updates and get free shipping
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--contact    -->
+<section class="container-fluid px-0" id="contact-sec">
+    <div class="row g-0"  data-aos="fade-up">
+        <div class="col-12 col-lg-6 left-side">
+            <div class="container">
+                <div class="row g-0 justify-content-center justify-content-lg-end">
+                    <div class="col-10 px-0">
+                        <div class="my-5 py-5">
+                            <div class="">
+                                <button class="btn btn-warning">Call us</button>
+                                <h2 class="text-white my-3">09 - 768700966</h2>
+                            </div>
+                            <div class="g-0 row align-items-center">
+                                <div class="col-3">
+                                    <div class="">
+                                        <i class="fa-solid fa-clock fa-fw display-1 text-warning"></i>
+                                    </div>
+                                </div>
+                                <div class="col-9">
+                                    <div class="text-white">
+                                        <p class="">
+                                            mon - thu : 11:00 - 23:00
+                                        </p>
+                                        <p class="mb-0">
+                                            sat : 12:00 - 23:00
+                                            |
+                                            sun : 12:00 - 21:00
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="g-0 row align-items-center">
+                                <div class="col-3">
+                                    <div class="">
+                                        <i class="fa-regular fa-map fa-fw display-1 text-warning"></i>
+                                    </div>
+                                </div>
+                                <div class="col-9">
+                                    <div class="text-white">
+                                        <p class="">
+                                            123 East 456th Street,
+                                        </p>
+                                        <p class="mb-0">
+                                            New York City NY 10065
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="px-0 mt-5 row align-items-center">
+                                <div class="col col-lg-2">
+                                   <div class="bg-white rounded-3 text-center d-flex align-items-center justify-content-center" style="height:50px">
+                                       <i class="fa-brands fa-facebook-f h3 mb-0 fa-fw"></i>
+                                   </div>
+                                </div>
+                                <div class="col col-lg-2">
+                                    <div class="bg-white rounded-3 text-center d-flex align-items-center justify-content-center" style="height:50px">
+                                        <i class="fa-brands fa-twitter h3 mb-0 fa-fw"></i>
+                                    </div>
+                                </div>
+                                <div class="col col-lg-2">
+                                    <div class="bg-white rounded-3 text-center d-flex align-items-center justify-content-center" style="height:50px">
+                                        <i class="fa-brands fa-instagram h3 mb-0 fa-fw"></i>
+                                    </div>
+                                </div>
+                                <div class="col col-lg-2">
+                                    <div class="bg-white rounded-3 text-center d-flex align-items-center justify-content-center" style="height:50px">
+                                        <i class="fa-brands fa-youtube h3 mb-0 fa-fw"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-lg-6">
+            <div class="h-100">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d488797.790200674!2d95.90136892882308!3d16.839609800761767!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30c1949e223e196b%3A0x56fbd271f8080bb4!2sYangon%2C%20Myanmar%20(Burma)!5e0!3m2!1sen!2ssg!4v1653832347123!5m2!1sen!2ssg" class="h-100  w-100" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+
+
+    </div>
+</section>
+
+<!--footer-->
+<footer class="container-fluid footer">
+    <div class="row  my-5 py-5"  data-aos="fade-up">
+        <div class="col-12">
+            <div class="container">
+                <div class="row g-5">
+                    <div class="col-lg-5">
+                        <div class="">
+                            <img src="./assets/img/logoRed.svg" alt="" class="img-fluid" style="width: 100px;">
+                            <p class="my-3">Accusamus aperiam atque, debitis dolorem dolorum ea error est, ipsum iure natus pariatur possimus quasi, recusandae saepe temporibus ut vero voluptas voluptatum!</p>
+                            <div class="row align-items-center justify-content-center">
+                                <div class="col">
+                                    <div class="">
+                                        <img src="./assets/img/one-d.svg" alt="" class="img-fluid">
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="">
+                                        <img src="./assets/img/two-d.svg" alt="" class="img-fluid">
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="">
+                                        <img src="./assets/img/three.svg" alt="" class="img-fluid">
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="" style="margin-bottom: -6px">
+                                        <img src="./assets/img/four.svg" alt="" class="img-fluid">
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="">
+                                        <img src="./assets/img/five.svg" alt="" class="img-fluid">
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="">
+                                        <img src="./assets/img/six.svg" alt="" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="row">
+                            <div class="col-12 col-md-6 mb-3 mb-md-0">
+                                <div class="">
+                                    <h6 class="text-danger text-uppercase mb-0 d-inline-block border-bottom border-warning pb-2">useful links</h6>
+                                    <div class="mt-5">
+                                        <div class="row">
+                                            <div class="col">
+                                                <a href="" class="d-block mb-2 text-decoration-none text-black">About</a>
+                                                <a href="" class="d-block mb-2 text-decoration-none text-black">Menu</a>
+                                                <a href="" class="d-block mb-2 text-decoration-none text-black">Testimonials</a>
+                                                <a href="" class="d-block mb-2 text-decoration-none text-black">Contact us</a>
+                                            </div>
+                                            <div class="col">
+                                                <a href="" class="d-block mb-2 text-decoration-none text-black">Wishlist</a>
+                                                <a href="" class="d-block mb-2 text-decoration-none text-black">Privacy Policy</a>
+                                                <a href="" class="d-block mb-2 text-decoration-none text-black">Order Tracking</a>
+                                                <a href="" class="d-block mb-2 text-decoration-none text-black">Warranty and Service</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <h6 class="text-danger text-uppercase mb-0 d-inline-block border-bottom border-warning pb-2">instagram feed</h6>
+                                <div class="mt-5">
+                                    <div class="row">
+                                        <div class="col-4">
+                                            <img src="./assets/img/one.jpg" alt="" style="height: 60px; width: 80px; object-fit: cover; object-position: center" class="img-fluid rounded-3">
+                                        </div>
+                                        <div class="col-4">
+                                            <img src="./assets/img/two.jpg" alt="" style="height: 60px; width: 80px; object-fit: cover; object-position: center" class="img-fluid rounded-3">
+                                        </div>
+                                        <div class="col-4">
+                                            <img src="./assets/img/three.jpg" alt="" style="height: 60px; width: 80px; object-fit: cover; object-position: center" class="img-fluid rounded-3">
+                                        </div>
+                                        <div class="col-4 mt-3">
+                                            <img src="./assets/img/four.jpg" alt="" style="height: 60px; width: 80px; object-fit: cover; object-position: center" class="img-fluid rounded-3">
+                                        </div>
+                                        <div class="col-4 mt-3">
+                                            <img src="./assets/img/five.jpg" alt="" style="height: 60px; width: 80px; object-fit: cover; object-position: center" class="img-fluid rounded-3">
+                                        </div>
+                                        <div class="col-4 mt-3">
+                                            <img src="./assets/img/six.jpg" alt="" style="height: 60px; width: 80px; object-fit: cover; object-position: center" class="img-fluid rounded-3">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr class="my-5 d-block">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="text-center">
+                            <h6 class="mb-0">© 2022, Hot Burgers. All rights reserved</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="./assets/vendor/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="./assets/vendor/node_modules/typed.js/lib/typed.min.js"></script>
+<script src="./assets/node_modules/aos/dist/aos.js"></script>
+<script src="./assets/js/app.js"></script>
+</body>
+</html>
